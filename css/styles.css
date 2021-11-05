@@ -48,7 +48,7 @@ p {
 a {
   text-decoration: none;
 }
-img{
+img {
   display: block;
 }
 /* Header */
@@ -111,25 +111,28 @@ img{
   margin-right: auto;
   /* outline: 2px solid tomato; */
 }
-.header {
+.main-nav {
   display: flex;
   align-items: center;
+  background-color: var(--main-white-color);
+}
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;
-  background-color: var(--main-white-color);
-  
+  border-bottom: 1px solid #ececec;
 }
 
 /* Main */
 .hero {
   text-align: center;
   background-color: var(--tertiary-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-bottom: 30px;
   color: var(--main-white-color);
-  
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -161,23 +164,28 @@ img{
   padding-bottom: 94px;
   /* outline: 2px solid green; */
 }
-.section.vantages,
-.section.work{
- background-color: var(--primary-bg-color);
+.section.work {
+  padding-top: 0;
 }
-.section.staff{
+.section.vantages,
+.section.work {
+  background-color: var(--primary-bg-color);
+}
+.section.staff {
   background-color: var(--secondary-bg-color);
 }
 .vantages-list,
 .work-list,
-.staff-list{
+.staff-list {
   display: flex;
 }
 .vantages-item + .vantages-item,
 .work-item + .work-item,
-.staff-item + .staff-item{
-margin-left: 30px;
+.staff-item + .staff-item {
+  margin-left: 30px;
 }
+.vantages-item {
+  width: 270px;
 }
 .vantages-title {
   margin-bottom: 10px;
@@ -218,6 +226,15 @@ margin-left: 30px;
   letter-spacing: 0.03em;
   text-align: center;
 }
+.staff-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--main-white-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
 /* Footer */
 .footer {
   padding-top: 60px;
@@ -246,17 +263,21 @@ margin-left: 30px;
 address-contact:focus {
   color: var(--accent-color);
 }
+
+.address-item + .address-item {
+  margin-top: 9px;
+}
 /* Portfolio page */
 
-.filter{
+.filter {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 34px;
 }
 
 .filter-button {
+  padding: 6px 22px;
   border-radius: 4px;
+  margin-bottom: 50px;
   border-color: transparent;
   color: var(--main-title-color);
   background-color: var(--secondary-bg-color);
@@ -267,9 +288,8 @@ address-contact:focus {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-
 }
-.filter-item + .filter-item{
+.filter-item + .filter-item {
   margin-left: 8px;
 }
 .filter-button:hover,
@@ -290,19 +310,20 @@ address-contact:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-.gallery{
+.gallery {
   display: flex;
   flex-wrap: wrap;
 }
 
-.gallery-item:not(:nth-child(3n+3)){
+.gallery-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
-.gallery-item:not(:nth-last-child(-n+3)){
+.gallery-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.card{
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
+.card {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
